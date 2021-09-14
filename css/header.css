@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e6aeae;
+}
+header i,
+header span {
+  color: white;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.container-header > div {
+  color: white;
+}
+.container-header > div span:not(:first-child) {
+  padding-left: 20px;
+}
+.container-header ul {
+  display: flex;
+  list-style: none;
+}
+.container-header ul li:not(:last-child) {
+  padding-right: 25px;
+}
+.container-header ul i {
+  font-size: 20px;
+}
+
+.feature {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-feature {
+  display: flex;
+  padding: 30px;
+}
+.container-feature a {
+  text-decoration: none;
+  color: gray;
+}
+.container-feature a:hover {
+  color: #e6aeae;
+}
+.container-feature > div:last-child {
+  margin-left: auto;
+}
+.container-feature ul {
+  margin-left: 80px;
+  list-style: none;
+  display: flex;
+  margin-top: auto;
+}
+.container-feature ul li:not(:first-child) {
+  margin-left: 40px;
+}
+.container-feature > div:last-child {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=header.css.map */
