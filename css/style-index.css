@@ -22,8 +22,71 @@
   height: 5px;
   width: 50px;
   background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
   margin: 0 10px;
   cursor: pointer;
+}
+
+.container-review {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-review > div {
+  width: 48%;
+  height: 200px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-review > div > div:first-child {
+  position: absolute;
+  bottom: 0;
+  height: 130%;
+}
+.container-review > div > div:first-child img {
+  height: 100%;
+}
+.container-review > div > div:last-child {
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container-review > div > div:last-child a {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 50px;
+  background-color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: gray;
+}
+.container-review-left {
+  background-color: #EFCBCB;
+}
+.container-review-left > div:first-child {
+  left: 5%;
+}
+.container-review-left > div:last-child {
+  right: 5%;
+}
+.container-review-right {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container-review-right > div:first-child {
+  right: 5%;
+}
+.container-review-right > div:last-child {
+  left: 5%;
 }
 
 /*# sourceMappingURL=style-index.css.map */
