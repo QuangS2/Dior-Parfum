@@ -118,7 +118,7 @@
 }
 
 .wrap-line {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   max-width: 100%;
   justify-content: center;
@@ -179,6 +179,32 @@
 }
 .container-product > div > div > div:last-child a {
   margin-left: auto;
+}
+
+.container-product-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: solid rgba(128, 128, 128, 0.5) 2px;
+}
+
+.container-more {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.container-more a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  color: white;
+}
+.container-more a:hover {
+  background-color: rgba(239, 203, 203, 0.7);
+  color: gray;
 }
 
 /*# sourceMappingURL=style-index.css.map */
