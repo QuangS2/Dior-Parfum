@@ -124,26 +124,31 @@
   justify-content: center;
   color: gray;
 }
-.wrap-line > div:first-child, .wrap-line > div:last-child {
+.wrap-line > div:first-child,
+.wrap-line > div:last-child {
   margin: 0 10px;
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.wrap-line > div:first-child > div, .wrap-line > div:last-child > div {
+.wrap-line > div:first-child > div,
+.wrap-line > div:last-child > div {
   background-color: rgba(128, 128, 128, 0.7);
   width: 100%;
   height: 1.5px;
   margin: 3px 0;
 }
-.wrap-line > div:first-child > div:last-child, .wrap-line > div:last-child > div:last-child {
+.wrap-line > div:first-child > div:last-child,
+.wrap-line > div:last-child > div:last-child {
   width: 95%;
 }
-.wrap-line > div:first-child .r-line, .wrap-line > div:last-child .r-line {
+.wrap-line > div:first-child .r-line,
+.wrap-line > div:last-child .r-line {
   margin-left: auto;
 }
-.wrap-line > div:first-child .l-line, .wrap-line > div:last-child .l-line {
+.wrap-line > div:first-child .l-line,
+.wrap-line > div:last-child .l-line {
   margin-right: auto;
 }
 
@@ -161,16 +166,19 @@
   max-height: 300px;
 }
 .container-product > div > div > div {
-  margin: 5px 15px 0px;
+  margin: 5px 10px 0px;
   display: flex;
 }
 .container-product > div > div > div a {
+  margin-right: 5px;
   text-decoration: none;
   color: gray;
-  margin-left: auto;
 }
 .container-product > div > div > div a:hover {
   color: tomato;
+}
+.container-product > div > div > div:last-child a {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style-index.css.map */
