@@ -16,7 +16,7 @@ footer {
 }
 .container-footer > div > div > h1 {
   font-size: 22px;
-  color: #B88B8B;
+  color: #b88b8b;
 }
 .container-footer > div > div > div {
   margin-top: 5px;
@@ -50,25 +50,29 @@ footer {
 }
 .foot-copyright p {
   color: gray;
-  font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
+  .container-footer > div {
+    width: 48%;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 488px) {
   .container-footer {
     display: block;
   }
   .container-footer > div {
-    margin: 10px auto;
-    width: 75%;
-    text-align: center;
+    width: auto;
   }
   .container-footer > div .foot-infor > div {
     justify-content: center;
   }
 }
-@media screen and (max-width: 488px) {
-  .container-footer > div {
-    width: auto;
+@media screen and (max-width: 360px) {
+  * {
+    font-size: 15px;
   }
 }
 

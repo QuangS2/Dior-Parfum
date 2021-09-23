@@ -55,6 +55,9 @@ header span {
   text-decoration: none;
   color: gray;
 }
+.container-feature a h1 {
+  font-family: "Cinzel", serif;
+}
 .container-feature a:hover {
   color: #e6aeae;
 }

@@ -105,6 +105,8 @@
 }
 .container-brand > div > a {
   display: block;
+  padding: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.5);
   width: 120px;
 }
 .container-brand > div > a img {
@@ -119,33 +121,29 @@
   color: gray;
 }
 .wrap-line h1 {
-  font-family: "Calistoga", cursive;
+  font-size: 50px;
+  font-family: "Big Shoulders Stencil Display", cursive;
 }
-.wrap-line > div:first-child,
-.wrap-line > div:last-child {
+.wrap-line > div:first-child, .wrap-line > div:last-child {
   margin: 0 10px;
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.wrap-line > div:first-child > div,
-.wrap-line > div:last-child > div {
+.wrap-line > div:first-child > div, .wrap-line > div:last-child > div {
   background-color: rgba(128, 128, 128, 0.7);
   width: 100%;
   height: 1.5px;
   margin: 3px 0;
 }
-.wrap-line > div:first-child > div:last-child,
-.wrap-line > div:last-child > div:last-child {
+.wrap-line > div:first-child > div:last-child, .wrap-line > div:last-child > div:last-child {
   width: 95%;
 }
-.wrap-line > div:first-child .r-line,
-.wrap-line > div:last-child .r-line {
+.wrap-line > div:first-child > div.r-line, .wrap-line > div:last-child > div.r-line {
   margin-left: auto;
 }
-.wrap-line > div:first-child .l-line,
-.wrap-line > div:last-child .l-line {
+.wrap-line > div:first-child > div.l-line, .wrap-line > div:last-child > div.l-line {
   margin-right: auto;
 }
 
@@ -186,8 +184,8 @@
   border-bottom: solid rgba(128, 128, 128, 0.5) 2px;
 }
 .container-product-bar h3 {
-  font-family: "Grechen Fuemen", cursive;
-  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
   font-weight: normal;
 }
 
@@ -210,6 +208,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container-review {
+    margin-top: 40px;
+  }
   .container-review > div {
     height: 160px;
   }
@@ -219,10 +220,23 @@
   .container-review > div > div:last-child a {
     margin-top: 10px;
   }
+
+  .container-product-bar h3 {
+    font-size: 25px;
+  }
+
+  .container-brand > div > a {
+    width: 100px;
+  }
+
+  .wrap-line > div:first-child, .wrap-line > div:last-child {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 488px) {
   .container-review {
     display: block;
+    margin-top: 0px;
   }
   .container-review > div {
     width: auto;
@@ -237,13 +251,36 @@
     width: 49%;
   }
 
+  .container-product-bar h3 {
+    font-size: 20px;
+  }
+
   .container-more a {
     font-size: 10px;
+  }
+
+  .container-brand > div > a {
+    width: 80px;
+  }
+
+  .wrap-line {
+    padding: 10px;
+  }
+  .wrap-line h1 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 360px) {
   .container-review > div {
     height: 150px;
+  }
+
+  .container-brand > div > a {
+    width: 60px;
+  }
+
+  .wrap-line > div:first-child, .wrap-line > div:last-child {
+    width: 30%;
   }
 }
 
