@@ -241,27 +241,9 @@
     font-size: 10px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .container-review > div {
-    height: 75px;
-  }
-  .container-review > div > div:last-child {
-    font-size: 10px;
-  }
-  .container-review > div > div:last-child a {
-    margin-top: 5px;
-    padding: 5px 20px;
-  }
-
-  .container-product {
-    font-size: 10px;
-  }
-  .container-product > div {
-    width: 49%;
-  }
-
-  .container-more a {
-    font-size: 10px;
+    height: 150px;
   }
 }
 
