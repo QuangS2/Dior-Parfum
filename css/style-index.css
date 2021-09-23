@@ -209,4 +209,49 @@
   color: gray;
 }
 
+@media screen and (max-width: 488px) {
+  .container-review {
+    display: block;
+  }
+  .container-review > div {
+    width: auto;
+    margin-top: 70px;
+    height: 180px;
+  }
+
+  .container-product {
+    font-size: 10px;
+  }
+  .container-product > div {
+    width: 49%;
+  }
+
+  .container-more a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-review > div {
+    height: 75px;
+  }
+  .container-review > div > div:last-child {
+    font-size: 10px;
+  }
+  .container-review > div > div:last-child a {
+    margin-top: 5px;
+    padding: 5px 20px;
+  }
+
+  .container-product {
+    font-size: 10px;
+  }
+  .container-product > div {
+    width: 49%;
+  }
+
+  .container-more a {
+    font-size: 10px;
+  }
+}
+
 /*# sourceMappingURL=style-index.css.map */

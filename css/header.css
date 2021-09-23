@@ -135,5 +135,14 @@ header span {
     display: none;
   }
 }
+@media screen and (max-width: 320px) {
+  .container-feature div:last-child > div {
+    padding: 0;
+  }
+  .container-feature div.-bar {
+    left: 15px;
+    top: 35%;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */
