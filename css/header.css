@@ -27,6 +27,7 @@ header span {
   padding: 5px;
 }
 .container-header > div {
+  margin-top: auto;
   color: white;
 }
 .container-header > div span:not(:first-child) {
@@ -98,6 +99,16 @@ header span {
   }
 }
 @media screen and (max-width: 488px) {
+  .container-header > div {
+    font-size: 15px;
+  }
+  .container-header ul > li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .container-header ul > li > a > i {
+    font-size: 15px;
+  }
+
   .container-feature {
     font-size: 18px;
     position: relative;
@@ -139,6 +150,10 @@ header span {
   }
 }
 @media screen and (max-width: 360px) {
+  .container-header > div {
+    font-size: 10px;
+  }
+
   .container-feature div:last-child > div {
     padding: 0;
   }

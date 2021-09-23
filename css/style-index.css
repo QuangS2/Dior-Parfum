@@ -208,6 +208,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .wrap-slide img {
+    height: 400px;
+  }
+  .wrap-slide-bar span {
+    width: 30px;
+  }
+
   .container-review {
     margin-top: 40px;
   }
@@ -234,6 +241,13 @@
   }
 }
 @media screen and (max-width: 488px) {
+  .wrap-slide img {
+    height: 270px;
+  }
+  .wrap-slide-bar span {
+    height: 3px;
+  }
+
   .container-review {
     display: block;
     margin-top: 0px;
@@ -271,6 +285,10 @@
   }
 }
 @media screen and (max-width: 360px) {
+  .wrap-slide-bar span {
+    width: 25px;
+  }
+
   .container-review > div {
     height: 150px;
   }
