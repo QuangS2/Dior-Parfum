@@ -209,6 +209,17 @@
   color: gray;
 }
 
+@media screen and (max-width: 768px) {
+  .container-review > div {
+    height: 160px;
+  }
+  .container-review > div > div:last-child {
+    font-size: 15px;
+  }
+  .container-review > div > div:last-child a {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 488px) {
   .container-review {
     display: block;
