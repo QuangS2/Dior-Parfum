@@ -105,16 +105,10 @@
 }
 .container-brand > div > a {
   display: block;
-  padding: 10px 0;
-  width: 15em;
-  text-align: center;
-  border: solid 1px gray;
-  text-decoration: none;
-  color: gray;
+  width: 120px;
 }
-.container-brand > div > a:hover {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+.container-brand > div > a img {
+  width: 100%;
 }
 
 .wrap-line {
@@ -123,6 +117,9 @@
   max-width: 100%;
   justify-content: center;
   color: gray;
+}
+.wrap-line h1 {
+  font-family: "Calistoga", cursive;
 }
 .wrap-line > div:first-child,
 .wrap-line > div:last-child {
@@ -158,7 +155,7 @@
   justify-content: space-between;
 }
 .container-product > div {
-  width: 30%;
+  width: 220px;
   margin-top: 2%;
 }
 .container-product > div img {
@@ -187,6 +184,11 @@
   margin-top: 10px;
   margin-bottom: 20px;
   border-bottom: solid rgba(128, 128, 128, 0.5) 2px;
+}
+.container-product-bar h3 {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 50px;
+  font-weight: normal;
 }
 
 .container-more {

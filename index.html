@@ -8,9 +8,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Calistoga&family=Caramel&family=Carattere&family=Grechen+Fuemen&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style-index.css" />
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Noir Parfum</title>
   </head>
   <body>
@@ -46,21 +52,25 @@
       <div class="container">
         <section>
           <div class="container-feature">
-            <div>
+            <div class="-logo">
               <a href="#">
                 <h1>Noir Parfum</h1>
               </a>
             </div>
-            <ul>
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Thương hiệu</a></li>
-              <li><a href="#">Sản phẩm</a></li>
-              <li><a href="#">Khuyến mãi</a></li>
-              <li><a href="#">Liên hệ</a></li>
-            </ul>
+            <div class="-bar">
+              <div><a href="#"><i class="fas fa-bars"></i></a></div>
+              <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thương hiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+            
             <div>
+              <div><a href="#"><span>Tài khoản</span><i class="fas fa-user-circle"></i></a></div>
               <div>
-                <a href="#"><i class="fas fa-cart-plus"></i></a>
+                <a href="#"><span>Giỏ hàng</span><i class="fas fa-cart-plus"></i></a>
               </div>
             </div>
           </div>
@@ -122,22 +132,21 @@
           <div class="container-brand">
             <div>
               <a href="#">
-                <h1>Gucci</h1>
+                <img src="./images/brand/gucci.jpg" alt="Gucci">
               </a>
             </div>
             <div>
               <a href="#">
-                <h1>Dior</h1>
+                <img src="./images/brand/dior.png" alt="Dior">              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./images/brand/calvin.png" alt="Calvin">
               </a>
             </div>
             <div>
               <a href="#">
-                <h1>Calvin Klein</h1>
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <h1>Versace</h1>
+                <img src="./images/brand/Versace.png" alt="Versace">
               </a>
             </div>
           </div>
@@ -150,17 +159,17 @@
           <div class="container-brand">
             <div>
               <a href="#">
-                <h1>Burberry</h1>
+                <img src="./images/brand/Burberry.jpg" alt="Burberry">
               </a>
             </div>
             <div>
               <a href="#">
-                <h1>Narciso</h1>
+                <img src="./images/brand/narciso.png" alt="narciso">
               </a>
             </div>
             <div>
               <a href="#">
-                <h1>Valentino</h1>
+                <img src="./images/brand/valentino.jpg" alt="valentino">
               </a>
             </div>
           </div>
@@ -201,6 +210,44 @@
       <div class="container">
         <section>
           <div class="container-product">
+            <div>
+              <img
+                src="./images/product/nuoc-hoa-chanel-coco-eau-de-toilette-100ml.png"
+                alt=""
+              />
+              <div>
+                <div>
+                  <a href="#">
+                    <h4>Nước Hoa Chanel Coco Eau De Toilette 100ml</h4>
+                  </a>
+                </div>
+                <div>2.890.000 ₫ VND</div>
+                <div>
+                  <a href="#">#Coco</a><a href="#">#Namgioi</a
+                  ><a href="#">#100ml</a>
+                </div>
+                <div><a href="#">Xem thêm</a></div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./images/product/nuoc-hoa-chanel-coco-eau-de-toilette-100ml.png"
+                alt=""
+              />
+              <div>
+                <div>
+                  <a href="#">
+                    <h4>Nước Hoa Chanel Coco Eau De Toilette 100ml</h4>
+                  </a>
+                </div>
+                <div>2.890.000 ₫ VND</div>
+                <div>
+                  <a href="#">#Coco</a><a href="#">#Namgioi</a
+                  ><a href="#">#100ml</a>
+                </div>
+                <div><a href="#">Xem thêm</a></div>
+              </div>
+            </div>
             <div>
               <img
                 src="./images/product/nuoc-hoa-chanel-coco-eau-de-toilette-100ml.png"

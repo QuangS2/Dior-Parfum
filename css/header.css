@@ -58,20 +58,82 @@ header span {
 .container-feature a:hover {
   color: #e6aeae;
 }
-.container-feature > div:last-child {
-  margin-left: auto;
+.container-feature > div.-bar {
+  margin-top: auto;
 }
-.container-feature ul {
+.container-feature > div.-bar > div {
+  display: none;
+}
+.container-feature > div.-bar ul {
   margin-left: 80px;
   list-style: none;
   display: flex;
-  margin-top: auto;
+  justify-content: space-between;
 }
-.container-feature ul li:not(:first-child) {
+.container-feature > div.-bar ul li:not(:first-child) {
   margin-left: 40px;
 }
 .container-feature > div:last-child {
+  margin-left: auto;
+  display: flex;
   margin-top: auto;
+}
+.container-feature > div:last-child > div {
+  padding: 0 10px;
+}
+.container-feature > div:last-child > div i {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-feature {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .container-feature ul {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 488px) {
+  .container-feature {
+    font-size: 18px;
+    position: relative;
+    padding: 20px;
+  }
+  .container-feature > div:first-child {
+    margin: 0 auto;
+  }
+  .container-feature > div.-bar {
+    left: 5px;
+    top: 38%;
+    z-index: 1;
+    position: absolute;
+  }
+  .container-feature > div.-bar > div {
+    display: block;
+    font-size: 22px;
+  }
+  .container-feature > div.-bar ul {
+    display: none;
+    flex-flow: column;
+    margin: 0;
+    width: 100px;
+  }
+  .container-feature > div.-bar ul li {
+    margin: 0px !important;
+  }
+  .container-feature > div.-bar ul li a {
+    display: block;
+    padding: 5px 0;
+  }
+  .container-feature > div:last-child {
+    position: absolute;
+    right: 5px;
+    top: 38%;
+  }
+  .container-feature > div:last-child > div span {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -53,4 +53,23 @@ footer {
   font-size: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .container-footer {
+    display: block;
+  }
+  .container-footer > div {
+    margin: 10px auto;
+    width: 75%;
+    text-align: center;
+  }
+  .container-footer > div .foot-infor > div {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 488px) {
+  .container-footer > div {
+    width: auto;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */
