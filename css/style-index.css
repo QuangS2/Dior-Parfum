@@ -162,7 +162,6 @@
 }
 .container-product > div > div > div {
   margin: 5px 10px 0px;
-  display: flex;
 }
 .container-product > div > div > div a {
   margin-right: 5px;
@@ -172,8 +171,19 @@
 .container-product > div > div > div a:hover {
   color: tomato;
 }
-.container-product > div > div > div:last-child a {
-  margin-left: auto;
+.container-product > div > div > div:last-child {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.container-product > div > div > div:last-child > a {
+  display: block;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(239, 203, 203, 0.5);
+  border-radius: 2px;
+  border: gray solid 1px;
 }
 
 .container-product-bar {
@@ -263,6 +273,10 @@
     padding: 5px 31px;
   }
 
+  .container-product > div > div > div:last-child {
+    font-size: 13px;
+  }
+
   .container-product-bar h3 {
     font-size: 25px;
   }
@@ -311,6 +325,15 @@
   }
   .container-product > div {
     width: 49%;
+  }
+  .container-product > div > div > div a {
+    margin: 0;
+  }
+  .container-product > div > div > div:last-child {
+    font-size: 11px;
+  }
+  .container-product > div > div > div:last-child > a {
+    width: 33%;
   }
 
   .container-product-bar h3 {
