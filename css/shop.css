@@ -180,5 +180,10 @@
     width: 48%;
   }
 }
+@media screen and (max-width: 488px) and (max-width: 360px) {
+  .container-shop > div:last-child > div:last-child > div > div:last-child > a {
+    width: 33%;
+  }
+}
 
 /*# sourceMappingURL=shop.css.map */
