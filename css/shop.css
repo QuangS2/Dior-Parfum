@@ -1,0 +1,184 @@
+.container-shop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.container-shop > div:first-child {
+  width: auto;
+  padding: 5px 7px;
+  border: gray solid 1px;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: #efcbcb;
+}
+.container-shop > div:first-child > i {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: -30px;
+  display: none;
+}
+.container-shop > div:first-child p {
+  color: gray;
+  padding: 5px;
+  background-color: wheat;
+  cursor: pointer;
+  border: solid gray 1px;
+}
+.container-shop > div:first-child ul {
+  list-style: none;
+}
+.container-shop > div:first-child ul li {
+  padding: 5px;
+}
+.container-shop > div:first-child > ul > li > ul {
+  padding-left: 15px;
+}
+.container-shop > div:first-child > ul > li > ul > li {
+  background-color: white;
+  border: solid 1px gray;
+  border-top: none;
+  cursor: pointer;
+}
+.container-shop > div:last-child {
+  width: 80%;
+}
+.container-shop > div:last-child > div:first-child {
+  position: relative;
+  border-bottom: solid gray 1px;
+  padding-bottom: 5px;
+}
+.container-shop > div:last-child > div:first-child > p {
+  width: 100px;
+  margin-left: auto;
+  background-color: wheat;
+  padding: 11px;
+  cursor: pointer;
+}
+.container-shop > div:last-child > div:first-child ul {
+  padding: 7px;
+  position: absolute;
+  right: 0;
+  display: none;
+  border-radius: 3px;
+  list-style: none;
+  background-color: #efcbcb;
+  width: 150px;
+  border: solid gray 2px;
+}
+.container-shop > div:last-child > div:first-child ul > li {
+  margin: 7px 0;
+  padding: 5px;
+  border: gray solid 2px;
+}
+.container-shop > div:last-child > div:last-child {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-shop > div:last-child > div:last-child > div {
+  width: 32%;
+  border: gray solid 2px;
+  margin: 5px 2px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.container-shop > div:last-child > div:last-child > div > div {
+  width: 100%;
+}
+.container-shop > div:last-child > div:last-child > div > div:first-child > img {
+  width: 100%;
+  align-self: center;
+}
+.container-shop > div:last-child > div:last-child > div > div:last-child {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.container-shop > div:last-child > div:last-child > div > div:last-child > a {
+  display: block;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(239, 203, 203, 0.5);
+  border-radius: 2px;
+  border: gray solid 1px;
+}
+.container-shop > div:last-child > div:last-child > div a {
+  text-decoration: none;
+  color: gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-shop {
+    position: relative;
+  }
+  .container-shop > div:first-child {
+    position: absolute;
+    left: -168px;
+    z-index: 2;
+  }
+  .container-shop > div:first-child > i {
+    display: block;
+    cursor: pointer;
+  }
+  .container-shop > div:last-child {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-shop > div {
+    font-size: 10px;
+  }
+  .container-shop > div:first-child {
+    left: 0px;
+  }
+  .container-shop > div:first-child p {
+    padding: 2px;
+  }
+  .container-shop > div:first-child > ul > li > ul {
+    padding-left: 3px;
+  }
+  .container-shop > div:last-child {
+    width: 100%;
+  }
+  .container-shop > div:last-child > div:first-child > p {
+    padding: 7px;
+    width: 70px;
+  }
+  .container-shop > div:last-child > div:first-child ul {
+    width: 110px;
+    padding: 3px;
+  }
+  .container-shop > div:last-child > div:first-child ul > li {
+    margin: 3px 0;
+  }
+}
+@media screen and (max-width: 488px) {
+  .container-shop > div:first-child {
+    background-color: unset;
+    border: unset;
+    padding: 0 7px;
+  }
+  .container-shop > div:first-child p {
+    border: unset;
+    padding: 7px;
+  }
+  .container-shop > div:first-child > i {
+    display: none;
+  }
+  .container-shop > div:first-child > ul {
+    display: none;
+    background-color: #efcbcb;
+  }
+  .container-shop > div:last-child > div:first-child ul {
+    display: block;
+  }
+  .container-shop > div:last-child > div:last-child > div {
+    width: 48%;
+  }
+}
+
+/*# sourceMappingURL=shop.css.map */
