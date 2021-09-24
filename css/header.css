@@ -77,6 +77,9 @@ header span {
 .container-feature > div.-bar ul li:not(:first-child) {
   margin-left: 40px;
 }
+.container-feature > div:not(:first-child) {
+  font-size: 18px;
+}
 .container-feature > div:last-child {
   margin-left: auto;
   display: flex;
@@ -89,67 +92,26 @@ header span {
   padding: 0 5px;
 }
 
-.wrap-slide {
-  position: relative;
-}
-.wrap-slide img {
-  width: 100%;
-  height: 680px;
-  object-fit: cover;
-}
-.wrap-slide-bar {
-  width: 100%;
-  position: absolute;
-  bottom: 10%;
-  height: fit-content;
-  margin-left: auto;
-}
-.wrap-slide-bar > div {
-  display: flex;
-  justify-content: center;
-}
-.wrap-slide-bar span {
-  display: block;
-  height: 5px;
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .container-feature {
-    font-size: 12px;
-    font-weight: bold;
+@media screen and (max-width: 1024px) {
+  .container-feature > div {
+    font-size: 14px;
   }
-  .container-feature ul {
+  .container-feature > div:not(:first-child) {
+    font-size: 15px;
+  }
+  .container-feature > div.-bar ul {
     margin-left: 40px;
   }
-
-  .wrap-slide img {
-    height: 400px;
-  }
-  .wrap-slide-bar span {
-    width: 30px;
-  }
 }
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 768px) {
   .container-header > div {
-    font-size: 15px;
+    font-size: 16px;
   }
   .container-header ul > li:not(:last-child) {
     padding-right: 10px;
   }
   .container-header ul > li > a > i {
     font-size: 15px;
-  }
-
-  .wrap-slide img {
-    height: 270px;
-  }
-  .wrap-slide-bar span {
-    height: 3px;
   }
 
   .container-feature {
@@ -192,21 +154,35 @@ header span {
     display: none;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 488px) {
   .container-header > div {
     font-size: 10px;
   }
 
+  .container-feature {
+    padding: 10px;
+  }
   .container-feature div:last-child > div {
     padding: 0;
   }
   .container-feature div.-bar {
     left: 15px;
-    top: 25%;
+    top: 32%;
+  }
+  .container-feature a h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container-header ul > li > a > i {
+    font-size: 10px;
   }
 
-  .wrap-slide-bar span {
-    width: 25px;
+  .container-feature {
+    padding-top: 15px;
+  }
+  .container-feature a h1 {
+    font-size: 20px;
   }
 }
 
