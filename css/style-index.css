@@ -150,11 +150,14 @@
 .container-product {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .container-product > div {
-  width: 220px;
-  margin-top: 2%;
+  width: 19%;
+  margin-top: 3%;
+}
+.container-product > div:not(:last-child) {
+  margin-right: 1%;
 }
 .container-product > div img {
   width: 100%;
@@ -164,7 +167,6 @@
   margin: 5px 10px 0px;
 }
 .container-product > div > div > div a {
-  margin-right: 5px;
   text-decoration: none;
   color: gray;
 }
@@ -175,12 +177,13 @@
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
+  font-size: 17px;
 }
 .container-product > div > div > div:last-child > a {
   display: block;
-  width: 30%;
+  width: 33%;
   text-align: center;
-  padding: 5px;
+  padding: 2px;
   background-color: rgba(239, 203, 203, 0.5);
   border-radius: 2px;
   border: gray solid 1px;
@@ -225,6 +228,13 @@
 @media screen and (max-width: 1024px) {
   .wrap-line > div:first-child, .wrap-line > div:last-child {
     width: 37%;
+  }
+
+  .container-product > div {
+    width: 24%;
+  }
+  .container-product > div > div > div:last-child {
+    font-size: 16px;
   }
 
   .wrap-slide img {
@@ -273,8 +283,23 @@
     padding: 5px 31px;
   }
 
+  .container-product > div {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .container-product > div > div > div {
+    font-size: 13px;
+  }
+  .container-product > div > div > div a > h4 {
+    font-size: 13px;
+  }
   .container-product > div > div > div:last-child {
     font-size: 13px;
+  }
+  .container-product > div > div > div:last-child a {
+    width: 33%;
+    padding: 5px 1px;
+    margin: 0;
   }
 
   .container-product-bar h3 {
@@ -295,7 +320,7 @@
     width: 35%;
   }
 }
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 480px) {
   .wrap-slide img {
     height: 270px;
   }
@@ -329,9 +354,6 @@
   .container-product > div > div > div a {
     margin: 0;
   }
-  .container-product > div > div > div:last-child {
-    font-size: 11px;
-  }
   .container-product > div > div > div:last-child > a {
     width: 33%;
   }
@@ -349,30 +371,7 @@
   }
 
   .wrap-line > div:first-child, .wrap-line > div:last-child {
-    width: 32%;
-  }
-}
-@media screen and (max-width: 360px) {
-  .wrap-slide img {
-    height: 200px;
-  }
-  .wrap-slide-bar span {
-    width: 15px;
-  }
-
-  .container-review > div {
-    height: 100px;
-  }
-  .container-review > div > div:last-child {
-    font-size: 13px;
-  }
-
-  .container-brand > div > a {
-    width: 60px;
-  }
-
-  .wrap-line h1 {
-    font-size: 23px;
+    width: 28%;
   }
 }
 
