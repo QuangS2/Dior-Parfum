@@ -1,3 +1,21 @@
+.wdRight {
+  margin-left: 100%;
+  overflow: hidden;
+}
+
+.wdLeft {
+  margin-right: 100%;
+  overflow: hidden;
+}
+
+.show {
+  margin: unset;
+}
+
+.wrapper {
+  transition: margin 2s;
+}
+
 .wrap-slide {
   position: relative;
 }
@@ -330,6 +348,10 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .wrapper {
+    margin: unset;
+  }
+
   .wrap-slide img {
     height: 270px;
   }
