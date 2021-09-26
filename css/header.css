@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.active {
+  display: block !important;
+}
+
+.activeBtn {
+  background-color: rgba(242, 213, 213, 0.7) !important;
+}
+
 body {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -55,6 +63,7 @@ header span {
 .container-feature a {
   text-decoration: none;
   color: gray;
+  display: block;
 }
 .container-feature a h1 {
   font-family: "Cinzel", serif;
@@ -140,6 +149,7 @@ header span {
   }
   .container-feature > div.-bar ul li {
     margin: 0px !important;
+    border-bottom: 1px gray solid;
   }
   .container-feature > div.-bar ul li a {
     display: block;

@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style-index.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
     <title>Noir Parfum</title>
   </head>
   <body>
@@ -59,13 +65,13 @@
             </div>
             <div class="-bar">
               <div>
-                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#" class="menu-bar"><i class="fas fa-bars"></i></a>
               </div>
-              <ul>
+              <ul class="menu-list">
                 <li><a href="./index.html">Trang chủ</a></li>
-                <li><a href="#">Thương hiệu</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#" name="-brand">Thương hiệu</a></li>
+                <li><a href="#" name="-product">Sản phẩm</a></li>
+                <li><a href="#" name="-about">Liên hệ</a></li>
               </ul>
             </div>
 
@@ -88,9 +94,18 @@
     <div class="wrapper">
       <section>
         <div class="wrap-slide">
-          <div><img src="./images/slide9.jpg" alt="infor" /></div>
+          <div>
+            <img src="./images/slide9.jpg" alt="slide6" class="-img1 active">
+            <img src="./images/slide7.jpg" alt="slide7" class="-img2">
+            <img src="./images/slide5.jpg" alt="infor" class="-img3">
+            <img src="./images/slide8.jpg" alt="bake" class="-img4">
+          </div>
           <div class="wrap-slide-bar">
-            <div><span></span><span></span><span></span><span></span></div>
+            <div class="-slideBtn">
+              <span slot="1"></span>
+              <span slot="2"></span>
+              <span slot="3"></span>
+              <span slot="4"></span></div>
           </div>
         </div>
       </section>
@@ -103,7 +118,7 @@
               <div></div>
               <div class="l-line"></div>
             </div>
-            <div><h1>Thương hiệu</h1></div>
+            <div class="-brand"><h1>Thương hiệu</h1></div>
             <div>
               <div></div>
               <div class="r-line"></div>
@@ -191,7 +206,7 @@
               <div></div>
               <div class="l-line"></div>
             </div>
-            <div><h1>Sản phẩm</h1></div>
+            <div class="-product"><h1>Sản phẩm</h1></div>
             <div>
               <div></div>
               <div class="r-line"></div>
@@ -407,7 +422,7 @@
     <footer>
       <div class="wrapper">
         <div class="container">
-          <div class="container-footer">
+          <div class="container-footer -about">
             <div>
               <div>
                 <h1>NOIR PARFUM</h1>
