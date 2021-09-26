@@ -31,7 +31,7 @@
   margin: 80px 0px 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .container-review > div {
   width: 48%;
@@ -230,6 +230,10 @@
     width: 37%;
   }
 
+  .container-brand > div > a {
+    width: 101px;
+  }
+
   .container-product > div {
     width: 24%;
   }
@@ -271,9 +275,10 @@
 
   .container-review > div {
     height: 100px;
+    max-width: 263px;
   }
   .container-review > div > div:first-child {
-    height: 140%;
+    height: 127%;
   }
   .container-review > div > div:last-child {
     font-size: 11px;
@@ -307,7 +312,7 @@
   }
 
   .container-brand > div > a {
-    width: 100px;
+    width: 67px;
   }
 
   .wrap-line {
@@ -331,17 +336,19 @@
   .container-review {
     display: block;
     margin-top: 0px;
+    flex-direction: column;
   }
   .container-review > div {
     width: auto;
+    margin: 0 auto;
     margin-top: 70px;
-    height: 127px;
+    height: 97px;
   }
   .container-review > div > div:first-child {
     height: 150%;
   }
   .container-review > div > div:last-child {
-    font-size: 19px;
+    font-size: 13px;
     top: 30%;
   }
 
@@ -367,7 +374,7 @@
   }
 
   .container-brand > div > a {
-    width: 80px;
+    width: 57px;
   }
 
   .wrap-line > div:first-child, .wrap-line > div:last-child {
