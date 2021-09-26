@@ -105,6 +105,12 @@
   border-radius: 2px;
   border: gray solid 1px;
 }
+.container-shop > div:last-child > div:last-child > div > div > p {
+  margin-top: 10px;
+}
+.container-shop > div:last-child > div:last-child > div > p {
+  margin-top: 10px;
+}
 .container-shop > div:last-child > div:last-child > div a {
   text-decoration: none;
   color: gray;
@@ -127,13 +133,16 @@
     width: 90%;
     margin: auto;
   }
+  .container-shop > div:last-child > div:last-child > div > div:last-child {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container-shop > div {
     font-size: 10px;
   }
   .container-shop > div:first-child {
-    left: 0px;
+    left: -119px;
   }
   .container-shop > div:first-child p {
     padding: 2px;
@@ -155,12 +164,21 @@
   .container-shop > div:last-child > div:first-child ul > li {
     margin: 3px 0;
   }
+  .container-shop > div:last-child > div:last-child > div > div:last-child {
+    margin-top: 13px;
+    font-size: 11px;
+  }
+  .container-shop > div:last-child > div:last-child > div > div:last-child > a {
+    width: 32%;
+    padding: 5px 3px;
+  }
 }
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 480px) {
   .container-shop > div:first-child {
     background-color: unset;
     border: unset;
     padding: 0 7px;
+    left: 0;
   }
   .container-shop > div:first-child p {
     border: unset;
@@ -173,16 +191,8 @@
     display: none;
     background-color: #efcbcb;
   }
-  .container-shop > div:last-child > div:first-child ul {
-    display: block;
-  }
   .container-shop > div:last-child > div:last-child > div {
     width: 48%;
-  }
-}
-@media screen and (max-width: 488px) and (max-width: 360px) {
-  .container-shop > div:last-child > div:last-child > div > div:last-child > a {
-    width: 33%;
   }
 }
 
