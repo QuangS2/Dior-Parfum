@@ -62,14 +62,18 @@
   display: none;
   border-radius: 3px;
   list-style: none;
-  background-color: #efcbcb;
+  background-color: rgba(239, 203, 203, 0.5);
   width: 150px;
-  border: solid gray 2px;
 }
 .container-shop > div:last-child > div:first-child ul > li {
   margin: 7px 0;
   padding: 5px;
-  border: gray solid 2px;
+  border: gray solid 1px;
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+.container-shop > div:last-child > div:first-child ul > li > input {
+  display: none;
 }
 .container-shop > div:last-child > div:last-child {
   margin-top: 10px;

@@ -52,6 +52,25 @@ $(function () {
       }
     });
   });
+  // shop
+  $(".-sortBtn").click(function () { 
+    $(".-sortBtn+ul").toggleClass("active");
+  });
+  $(".-sortBtn+ul>li").hover(function () {
+      $(this).css({
+        "background-color": "#EBBEBE"
+      });
+    }, function () {
+      $(this).css({
+        "background-color": "#EEEEEE"
+      });
+    }
+  );
+  $(".-sortBtn+ul>li").click(function () {
+    $(this)[0].firstChild.checked=true;
+  });
+  
+
 });
 function changSlide(n) {
   if (n > 4) n = 1;
