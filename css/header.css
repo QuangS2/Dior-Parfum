@@ -8,6 +8,25 @@
   display: block !important;
 }
 
+.wdRight {
+  margin-left: auto;
+  width: 0%;
+  overflow: hidden;
+}
+
+.wdLeft {
+  width: 0%;
+  overflow: hidden;
+}
+
+.show {
+  width: 100%;
+}
+
+.wrapper {
+  transition: width 1.5s;
+}
+
 .activeBtn {
   background-color: rgba(242, 213, 213, 0.7) !important;
 }
@@ -16,23 +35,23 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-header {
-  background-color: #e6aeae;
-}
-header i,
-header span {
-  color: white;
-}
-
 .container {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.wr-header {
+  background-color: #e6aeae;
 }
 
 .container-header {
   display: flex;
   justify-content: space-between;
   padding: 5px;
+}
+.container-header i,
+.container-header span {
+  color: white;
 }
 .container-header > div {
   margin-top: auto;

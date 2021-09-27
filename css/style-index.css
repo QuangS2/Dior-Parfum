@@ -1,21 +1,3 @@
-.wdRight {
-  margin-left: 100%;
-  overflow: hidden;
-}
-
-.wdLeft {
-  margin-right: 100%;
-  overflow: hidden;
-}
-
-.show {
-  margin: unset;
-}
-
-.wrapper {
-  transition: margin 1.5s;
-}
-
 .wrap-slide {
   position: relative;
 }
@@ -120,7 +102,6 @@
   justify-content: center;
   font-size: 9px;
   margin: 10px 0;
-  flex-wrap: wrap;
 }
 .container-brand > div {
   margin: 10px 10px 0;
@@ -143,6 +124,7 @@
   color: gray;
 }
 .wrap-line h1 {
+  white-space: nowrap;
   font-size: 50px;
   font-family: "Big Shoulders Stencil Display", cursive;
 }
@@ -219,6 +201,7 @@
   border-bottom: solid rgba(128, 128, 128, 0.5) 2px;
 }
 .container-product-bar h3 {
+  white-space: nowrap;
   font-family: "Dancing Script", cursive;
   font-size: 30px;
   font-weight: normal;

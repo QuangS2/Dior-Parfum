@@ -33,9 +33,9 @@ $(function () {
     var t = $(this)[0].slot;
     changSlide(Number(t));
   });
-  // setTimeout(function () {
-  //   $(".wdRight").addClass("show");
-  // }, 2000);
+  setTimeout(function () {
+    $(".wdRight").addClass("show");
+  }, 2000);
   $(window).scroll(function () {
     if ($("html")[0].clientWidth > 481) {
       var n = $(".wrapper").length;
@@ -43,7 +43,7 @@ $(function () {
         var elm = $(".wrapper")[j];
         if (
           $("html,body").scrollTop() + $("html")[0].clientHeight >
-          $(".wrapper")[j].offsetTop
+          $(elm)[0].offsetTop
         ) {
           $(elm).addClass("show");
         } else {
