@@ -37,20 +37,20 @@ $(function () {
     $(".wdRight").addClass("show");
   }, 2000);
   $(window).scroll(function () {
-    if ($("html")[0].clientWidth > 481) {
-      var n = $(".wrapper").length;
-      for (j = 0; j < n; j++) {
-        var elm = $(".wrapper")[j];
+    $(".wrapper").each(function () {
+      if ($("html")[0].clientWidth > 480) {
         if (
           $("html,body").scrollTop() + $("html")[0].clientHeight >
-          $(elm)[0].offsetTop
+          $(this)[0].offsetTop
         ) {
-          $(elm).addClass("show");
+          $(this).addClass("show");
         } else {
-          $(elm).removeClass("show");
+          $(this).removeClass("show");
         }
+      }else{
+        $(this).addClass("show");
       }
-    }
+    });
   });
 });
 function changSlide(n) {
