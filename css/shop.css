@@ -207,7 +207,7 @@
     padding: 7px;
   }
   .container-shop > div:first-child > i {
-    display: none;
+    display: none !important;
   }
   .container-shop > div:first-child > ul {
     display: none;

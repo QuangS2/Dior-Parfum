@@ -11,9 +11,6 @@ $(function () {
       1000
     );
   });
-  $(window).resize(function () {
-    $(".menu-list").removeClass("active");
-  });
   setInterval(function () {
     changSlide(i + 1);
   }, 5000);
@@ -91,6 +88,10 @@ $(function () {
   $(".-classify >i").click(function(){
     $(".-classify >i").toggleClass("active");
     $(this).parent().toggleClass("activeClassify");
+  });
+  $(window).resize(function () {
+    $(".menu-list").removeClass("active");
+    $(".-classify >ul").removeClass("active");
   });
 });
 function changSlide(n) {
