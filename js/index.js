@@ -56,18 +56,20 @@ $(function () {
   $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
   });
-  $(".-sortBtn+ul>li").hover(
-    function () {
-      $(this).css({
-        "background-color": "#EBBEBE",
-      });
-    },
-    function () {
-      $(this).css({
-        "background-color": "#EEEEEE",
-      });
-    }
-  );
+  $("[type='radio']")
+    .parent()
+    .hover(
+      function () {
+        $(this).css({
+          "background-color": "#EBBEBE",
+        });
+      },
+      function () {
+        $(this).css({
+          "background-color": "white",
+        });
+      }
+    );
   $("[type='radio']")
     .parent()
     .click(function () {
@@ -77,7 +79,19 @@ $(function () {
     });
   setTimeout(function () {
     $(":checked").parent().addClass("activeRadio");
+    if ($("html")[0].clientWidth > 480){
+      $(".-classify p").next().addClass("active");
+    }
   }, 0);
+  $(".-classify p").click(function () {
+    if ($("html")[0].clientWidth < 1025){
+      $(this).next().toggleClass("active");
+    }
+  });
+  $(".-classify >i").click(function(){
+    $(".-classify >i").toggleClass("active");
+    $(this).parent().toggleClass("activeClassify");
+  });
 });
 function changSlide(n) {
   if (n > 4) n = 1;
