@@ -47,30 +47,37 @@ $(function () {
         } else {
           $(this).removeClass("show");
         }
-      }else{
+      } else {
         $(this).addClass("show");
       }
     });
   });
   // shop
-  $(".-sortBtn").click(function () { 
+  $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
   });
-  $(".-sortBtn+ul>li").hover(function () {
+  $(".-sortBtn+ul>li").hover(
+    function () {
       $(this).css({
-        "background-color": "#EBBEBE"
+        "background-color": "#EBBEBE",
       });
-    }, function () {
+    },
+    function () {
       $(this).css({
-        "background-color": "#EEEEEE"
+        "background-color": "#EEEEEE",
       });
     }
   );
-  $(".-sortBtn+ul>li").click(function () {
-    $(this)[0].firstChild.checked=true;
-  });
-  
-
+  $("[type='radio']")
+    .parent()
+    .click(function () {
+      $(this.firstChild)[0].checked = true;
+      $(":checked").parent().addClass("activeRadio");
+      $("[type='radio']:not(:checked)").parent().removeClass("activeRadio");
+    });
+  setTimeout(function () {
+    $(":checked").parent().addClass("activeRadio");
+  }, 0);
 });
 function changSlide(n) {
   if (n > 4) n = 1;

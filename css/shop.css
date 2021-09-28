@@ -1,7 +1,14 @@
+.activeRadio {
+  background-color: #EBBEBE !important;
+}
+
 .container-shop {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+}
+.container-shop input {
+  display: none;
 }
 .container-shop > div:first-child {
   width: auto;
@@ -9,7 +16,7 @@
   border: gray solid 1px;
   height: fit-content;
   border-radius: 5px;
-  background-color: #efcbcb;
+  background-color: #f2d5d5;
 }
 .container-shop > div:first-child > i {
   position: absolute;
@@ -71,9 +78,6 @@
   border: gray solid 1px;
   background-color: #EEEEEE;
   cursor: pointer;
-}
-.container-shop > div:last-child > div:first-child ul > li > input {
-  display: none;
 }
 .container-shop > div:last-child > div:last-child {
   margin-top: 10px;
