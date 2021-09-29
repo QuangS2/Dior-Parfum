@@ -92,6 +92,10 @@ $(function () {
   $(window).resize(function () {
     $(".menu-list").removeClass("active");
     $(".-classify >ul").removeClass("active");
+    $("[type='radio']").parent().parent().removeClass("active");
+    if ($("html")[0].clientWidth > 1024){
+      
+    }
   });
 });
 function changSlide(n) {

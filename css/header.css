@@ -71,13 +71,10 @@ body {
   font-size: 20px;
 }
 
-.feature {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .container-feature {
   display: flex;
-  padding: 30px 0;
+  padding: 23px 0;
+  justify-content: space-around;
 }
 .container-feature a {
   text-decoration: none;
@@ -86,24 +83,36 @@ body {
 }
 .container-feature a h1 {
   font-family: "Cinzel", serif;
+  margin-top: auto;
 }
 .container-feature a:hover {
   color: #e6aeae;
 }
-.container-feature > div.-bar {
+.container-feature > div:first-child {
+  margin-right: auto;
   margin-top: auto;
 }
-.container-feature > div.-bar > div {
-  display: none;
-}
-.container-feature > div.-bar ul {
-  margin-left: 80px;
-  list-style: none;
+.container-feature > div.-search-area {
   display: flex;
-  justify-content: space-between;
+  width: auto;
+  align-items: center;
+  height: 2em;
 }
-.container-feature > div.-bar ul li:not(:first-child) {
-  margin-left: 40px;
+.container-feature > div.-search-area > input {
+  height: 100%;
+  width: 31em;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 3px 7px 0 rgba(0, 0, 0, 0.09);
+}
+.container-feature > div.-search-area > a {
+  margin-left: 2em;
+  height: 100%;
+  display: flex;
+  width: 5em;
+  background-color: #e6aeae;
+}
+.container-feature > div.-search-area > a > i {
+  margin: auto;
 }
 .container-feature > div:not(:first-child) {
   font-size: 18px;
@@ -120,15 +129,53 @@ body {
   padding: 0 5px;
 }
 
+.-bar {
+  margin-top: auto;
+}
+.-bar > div {
+  display: none;
+}
+.-bar > div > a > i {
+  color: gray;
+  font-size: 20px;
+}
+.-bar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.-bar > ul > li a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  padding: 7px 37px;
+}
+.-bar > ul > li:not(:last-child) {
+  border-right: solid 1px gray;
+}
+
 @media screen and (max-width: 1024px) {
-  .container-feature > div {
-    font-size: 14px;
+  .container-feature > div.-search-area {
+    height: 31px;
   }
-  .container-feature > div:not(:first-child) {
-    font-size: 15px;
+  .container-feature > div.-search-area > a {
+    width: 3em;
+    margin-left: 1em;
   }
-  .container-feature > div.-bar ul {
-    margin-left: 40px;
+  .container-feature > div.-search-area > a h1 {
+    font-size: 23px;
+  }
+  .container-feature > div.-search-area > a > i {
+    font-size: 17px;
+  }
+  .container-feature > div.-search-area > input {
+    width: 23em;
+  }
+  .container-feature > div:last-child {
+    font-size: 17px;
+  }
+  .container-feature > div:last-child > div {
+    padding: 0 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -142,76 +189,57 @@ body {
     font-size: 15px;
   }
 
-  .container-feature {
-    font-size: 18px;
+  .feature {
     position: relative;
-    padding: 20px;
+  }
+
+  .container-feature {
+    padding-bottom: 37px;
   }
   .container-feature > div:first-child {
-    margin: 0 auto;
+    margin: auto;
   }
-  .container-feature > div.-bar {
-    left: 5px;
-    top: 38%;
-    z-index: 1;
+  .container-feature > div.-search-area {
     position: absolute;
-  }
-  .container-feature > div.-bar > div {
-    display: block;
-    font-size: 22px;
-  }
-  .container-feature > div.-bar ul {
-    display: none;
-    flex-flow: column;
-    margin: 0;
-    width: 100px;
-  }
-  .container-feature > div.-bar ul li {
-    margin: 0px !important;
-    border-bottom: 1px gray solid;
-  }
-  .container-feature > div.-bar ul li a {
-    display: block;
-    padding: 5px 0;
+    bottom: 0;
   }
   .container-feature > div:last-child {
     position: absolute;
-    right: 5px;
-    top: 38%;
+    right: 0;
+    top: 31px;
   }
-  .container-feature > div:last-child > div span {
+  .container-feature > div:last-child > div > a > span {
+    display: none;
+  }
+
+  .-bar {
+    position: absolute;
+    top: 29px;
+    left: 5px;
+  }
+  .-bar > div {
+    display: block;
+  }
+  .-bar > ul {
     display: none;
   }
 }
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 480px) {
   .container-header > div {
     font-size: 10px;
   }
-
-  .container-feature {
-    padding: 10px;
-  }
-  .container-feature div:last-child > div {
-    padding: 0;
-  }
-  .container-feature div.-bar {
-    left: 15px;
-    top: 32%;
-  }
-  .container-feature a h1 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 360px) {
   .container-header ul > li > a > i {
-    font-size: 10px;
+    font-size: 11px;
   }
 
-  .container-feature {
-    padding-top: 15px;
-  }
   .container-feature a h1 {
-    font-size: 20px;
+    font-size: 23px;
+  }
+  .container-feature > div.-search-area > a {
+    margin-left: 0;
+  }
+  .container-feature > div.-search-area > input {
+    width: 19em;
   }
 }
 
