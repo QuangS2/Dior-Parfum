@@ -194,19 +194,24 @@ body {
   }
 
   .container-feature {
-    padding-bottom: 37px;
+    padding-top: 19px;
+    padding-bottom: 53px;
   }
   .container-feature > div:first-child {
     margin: auto;
   }
   .container-feature > div.-search-area {
     position: absolute;
-    bottom: 0;
+    bottom: 11px;
+    height: 29px;
+  }
+  .container-feature > div.-search-area > input {
+    width: 19em;
   }
   .container-feature > div:last-child {
     position: absolute;
     right: 0;
-    top: 31px;
+    bottom: 13px;
   }
   .container-feature > div:last-child > div > a > span {
     display: none;
@@ -214,8 +219,8 @@ body {
 
   .-bar {
     position: absolute;
-    top: 29px;
-    left: 5px;
+    bottom: 13px;
+    left: 19px;
   }
   .-bar > div {
     display: block;
@@ -232,14 +237,29 @@ body {
     font-size: 11px;
   }
 
+  .container-feature {
+    padding-bottom: 41px;
+  }
   .container-feature a h1 {
     font-size: 23px;
   }
   .container-feature > div.-search-area > a {
     margin-left: 0;
+    width: 2.5em;
+  }
+  .container-feature > div.-search-area > a > i {
+    font-size: 13px;
   }
   .container-feature > div.-search-area > input {
-    width: 19em;
+    width: 161px;
+    font-size: 10px;
+  }
+  .container-feature > div:last-child > div {
+    padding: 0;
+  }
+
+  .-bar {
+    left: 5px;
   }
 }
 
