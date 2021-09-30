@@ -6,7 +6,7 @@
 }
 .wrap-slide img {
   width: 100%;
-  height: 680px;
+  height: 521px;
   object-fit: cover;
   display: none;
 }
@@ -227,7 +227,7 @@
 
 @media screen and (max-width: 1240px) {
   .wrap-slide img {
-    height: 500px;
+    height: 503px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -247,7 +247,7 @@
   }
 
   .wrap-slide img {
-    height: 380px;
+    height: 331px;
   }
 
   .wrap-slide-bar span {
@@ -272,7 +272,7 @@
 }
 @media screen and (max-width: 768px) {
   .wrap-slide img {
-    height: 350px;
+    height: 239px;
   }
   .wrap-slide-bar span {
     width: 30px;
@@ -336,7 +336,7 @@
   }
 
   .wrap-slide img {
-    height: 270px;
+    height: 179px;
   }
   .wrap-slide-bar span {
     height: 3px;
