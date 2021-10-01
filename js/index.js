@@ -25,7 +25,7 @@ $(function () {
   );
   $(".-slideBtn >span").click(function () {
     var t = $(this)[0].slot;
-    changSlide(Number(t));
+    if (t != i) changSlide(Number(t));
   });
   setInterval(function () {
     // $(".hideSlide").removeClass("hideSlide");
@@ -34,7 +34,7 @@ $(function () {
     // if(i>4) i = 1;
     // $(".-img"+i).addClass("inSlide");
     // $(".hideSlide").removeClass("inSlide");
-    changSlide(i+1);
+    changSlide(i + 1);
   }, 5000);
   setTimeout(function () {
     $(".wdRight").addClass("show");
@@ -55,6 +55,25 @@ $(function () {
       }
     });
   });
+  //brand
+  $(".review-content a").hover(function () {
+    $(this.children[1]).css({
+      "height":"99%",
+      "border-radius":"19px"
+    });
+    $(this.children[1].children[1]).css({
+      "display" : "block"
+    });
+    }, function () {
+      $(this.children[1]).css({
+        "height":"17%",
+        "border-radius":"0 0 19px 19px"
+      });
+      $(this.children[1].children[1]).css({
+        "display" : "none"
+      });
+    }
+  );
   // shop
   $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
@@ -102,15 +121,16 @@ $(function () {
     if ($("html")[0].clientWidth > 1024) {
     }
   });
-  
 });
 function changSlide(n) {
   if (n > 4) n = 1;
-  $(".hideSlide").removeClass("hideSlide");
   $(".inSlide").addClass("hideSlide");
   $("[slot=" + i + "]").removeClass("activeBtn");
   i = n;
   $("[slot=" + i + "]").addClass("activeBtn");
-  $(".-img"+i).addClass("inSlide");
+  $(".-img" + i).addClass("inSlide");
   $(".hideSlide").removeClass("inSlide");
+  setTimeout(function(){
+    $(".hideSlide").removeClass("hideSlide");
+  },1000)
 }
