@@ -55,7 +55,7 @@ $(function () {
       }
     });
   });
-  //brand
+  //bran
   $(".review-content a").hover(function () {
     $(this.children[1]).css({
       "height":"99%",
