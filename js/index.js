@@ -1,4 +1,5 @@
-var i = 1;
+var i = 1,
+j = 1;
 $(function () {
   $(".menu-bar").click(function () {
     $(".menu-list").toggleClass("active");
@@ -74,6 +75,14 @@ $(function () {
       });
     }
   );
+  setInterval(function(){
+    $(".hideReview").removeClass("hideReview");
+    $(".inReview").addClass("hideReview");
+    j++;
+    if(j>4) j = 1;
+    $("div[slot='"+j+"']").addClass("inReview");
+    $(".hideReview").removeClass("inReview");
+  },3000);
   // shop
   $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
