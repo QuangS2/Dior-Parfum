@@ -49,7 +49,7 @@
 
 .review-content > div {
   display: flex;
-  padding: 7%;
+  padding: 5% 11%;
 }
 .review-content > div > div a {
   display: block;
@@ -70,6 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 0 0 19px 19px;
 }
 .review-content > div > div a > div > p {
   color: rgba(255, 255, 255, 0.7);
@@ -257,20 +258,18 @@
     font-size: 25px;
   }
 
-  .review-content > div {
-    display: block;
+  .review-content > div > div:first-child > a > div p:first-child {
+    font-size: 17px;
   }
-  .review-content > div > div {
-    width: 100% !important;
+  .review-content > div > div:last-child > div > a > div {
+    bottom: 2%;
   }
-  .review-content > div > div:first-child > a > img {
-    height: 499px;
+  .review-content > div > div:last-child > div:first-child > a > div > p:first-child {
+    font-size: 13px;
+    font-weight: bold;
   }
-  .review-content > div > div:last-child > div {
-    margin-top: 3% !important;
-  }
-  .review-content > div > div:last-child > div > a > img {
-    height: 211px;
+  .review-content > div > div:last-child > div:last-child > a > div > p:first-child {
+    font-size: 23px;
   }
 
   .container-brand > div > a {
@@ -313,8 +312,20 @@
   .review-content > div > div:first-child > a > img {
     height: 311px;
   }
-  .review-content > div > div:last-child > div > a > img {
+  .review-content > div > div:first-child > a > div p:first-child {
+    font-size: 13px;
+  }
+  .review-content > div > div:last-child > div:first-child > a > img {
+    height: 113px;
+  }
+  .review-content > div > div:last-child > div:first-child > a > div > p:first-child {
+    font-size: 7px;
+  }
+  .review-content > div > div:last-child > div:last-child > a > img {
     height: 173px;
+  }
+  .review-content > div > div:last-child > div:last-child > a > div > p:first-child {
+    font-size: 17px;
   }
 
   .container-brand > div > a {
