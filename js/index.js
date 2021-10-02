@@ -82,7 +82,7 @@ $(function () {
     if(j>4) j = 1;
     $("div[slot='"+j+"']").addClass("inReview");
     $(".hideReview").removeClass("inReview");
-  },3000);
+  },3333);
   // shop
   $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
