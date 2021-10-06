@@ -39,7 +39,7 @@
 .inSlide {
   transition: left 1s;
   left: 0 !important;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hideSlide {
@@ -147,6 +147,102 @@
 }
 .container-brand > div > a img {
   width: 100%;
+}
+
+.ind-pro > div {
+  margin: 7% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.ind-pro > div a {
+  text-decoration: none;
+}
+.ind-pro > div > div {
+  padding: 5%;
+  width: 50%;
+}
+.ind-pro > div > div:first-child {
+  justify-content: center;
+  display: flex;
+}
+.ind-pro > div > div:first-child > a {
+  margin-top: auto;
+  padding: 5% 7%;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.ind-pro > div > div:first-child > a:hover {
+  color: white;
+}
+.ind-pro > div > div:last-child {
+  position: relative;
+}
+.ind-pro > div > div:last-child > div:first-child {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  top: 37%;
+  font-size: 40px;
+}
+.ind-pro > div > div:last-child > div:first-child > span {
+  display: block;
+  padding: 11px;
+}
+.ind-pro > div > div:last-child > div:last-child {
+  display: flex;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+.ind-pro > div > div:last-child > div:last-child > a {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  display: block;
+  text-align: center;
+  transition: left 1s;
+}
+.ind-pro > div > div:last-child > div:last-child > a > div {
+  padding: 5% 11%;
+}
+.ind-pro > div > div:last-child > div:last-child > a > div > img {
+  width: 100%;
+  border-radius: 20px;
+}
+.ind-pro > div > div:last-child > div:last-child > a > h2 {
+  color: lightslategray;
+}
+.ind-pro > div > div:last-child > div:last-child > a > p {
+  padding: 2px 13px;
+  width: fit-content;
+  margin: 13px auto;
+  color: gray;
+}
+.ind-pro > div > div:last-child > div:last-child > a > p:hover {
+  text-decoration: underline 2px;
+}
+.ind-pro > div:first-child {
+  background-image: url(/images/cover-female.png);
+}
+.ind-pro > div:last-child {
+  flex-direction: row-reverse;
+  background-image: url(/images/cover-male.png);
+}
+
+.middle {
+  left: 0 !important;
+}
+
+.leftSide {
+  left: -100% !important;
+}
+
+.lightBtn {
+  color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .container-product {

@@ -1,5 +1,5 @@
 var i = 1,
-j = 1;
+  j = 1;
 $(function () {
   $(".menu-bar").click(function () {
     $(".menu-list").toggleClass("active");
@@ -57,32 +57,59 @@ $(function () {
     });
   });
   //bran
-  $(".review-content a").hover(function () {
-    $(this.children[1]).css({
-      "height":"99%",
-      "border-radius":"19px"
-    });
-    $(this.children[1].children[1]).css({
-      "display" : "block"
-    });
-    }, function () {
+  $(".review-content a").hover(
+    function () {
       $(this.children[1]).css({
-        "height":"17%",
-        "border-radius":"0 0 19px 19px"
+        height: "99%",
+        "border-radius": "19px",
       });
       $(this.children[1].children[1]).css({
-        "display" : "none"
+        display: "block",
+      });
+    },
+    function () {
+      $(this.children[1]).css({
+        height: "17%",
+        "border-radius": "0 0 19px 19px",
+      });
+      $(this.children[1].children[1]).css({
+        display: "none",
       });
     }
   );
-  setInterval(function(){
+  setInterval(function () {
     $(".hideReview").removeClass("hideReview");
     $(".inReview").addClass("hideReview");
     j++;
-    if(j>4) j = 1;
-    $("div[slot='"+j+"']").addClass("inReview");
+    if (j > 4) j = 1;
+    $("div[slot='" + j + "']").addClass("inReview");
     $(".hideReview").removeClass("inReview");
-  },3333);
+  }, 3210);
+  //product
+  $(".ind-pro span").click(function () {
+    var prent = $(this).parent().parent()[0].className;
+    var way = this.className;
+    var  pos = Number($("."+prent)[0].ariaValueNow);
+    if (way === "rightBtn" && pos<3) {
+      $("."+prent+" .middle").addClass("leftSide");
+      pos++;
+      $("."+prent+" a[slot='"+pos+"']").addClass("middle");
+      $("."+prent+" .leftSide").removeClass("middle");
+    }else if(way==="leftBtn"&&pos>1){
+      $("."+prent+" .middle").removeClass("middle");
+      pos--;
+      $("."+prent+" a[slot='"+pos+"']").addClass("middle");
+      $("."+prent+" .middle").removeClass("leftSide");
+    }
+    if(pos===3||pos===1){
+      $(this).addClass("lightBtn");
+    }else{
+      $("."+prent+" span").each(function () {
+        $(this).removeClass("lightBtn");
+      });
+    }
+    $("."+prent)[0].ariaValueNow = pos;
+  });
   // shop
   $(".-sortBtn").click(function () {
     $(".-sortBtn+ul").toggleClass("active");
@@ -133,13 +160,11 @@ $(function () {
 });
 function changSlide(n) {
   if (n > 4) n = 1;
-  $(".inSlide").addClass("hideSlide");
-  $("[slot=" + i + "]").removeClass("activeBtn");
+  $("img.hideSlide").removeClass("hideSlide");
+  $("img.inSlide").addClass("hideSlide");
+  $("span[slot=" + i + "]").removeClass("activeBtn");
   i = n;
-  $("[slot=" + i + "]").addClass("activeBtn");
+  $("span[slot=" + i + "]").addClass("activeBtn");
   $(".-img" + i).addClass("inSlide");
-  $(".hideSlide").removeClass("inSlide");
-  setTimeout(function(){
-    $(".hideSlide").removeClass("hideSlide");
-  },1000)
+  $("img.hideSlide").removeClass("inSlide");
 }
