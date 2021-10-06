@@ -171,7 +171,7 @@
   padding: 5% 7%;
   font-size: 23px;
   color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .ind-pro > div > div:first-child > a:hover {
   color: white;
@@ -191,11 +191,14 @@
 .ind-pro > div > div:last-child > div:first-child > span {
   display: block;
   padding: 11px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
 }
 .ind-pro > div > div:last-child > div:last-child {
   display: flex;
   position: relative;
-  min-height: 400px;
+  min-height: 487px;
   overflow: hidden;
 }
 .ind-pro > div > div:last-child > div:last-child > a {
@@ -211,7 +214,7 @@
 }
 .ind-pro > div > div:last-child > div:last-child > a > div > img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 13px;
 }
 .ind-pro > div > div:last-child > div:last-child > a > h2 {
   color: lightslategray;
@@ -242,7 +245,7 @@
 }
 
 .lightBtn {
-  color: rgba(0, 0, 0, 0.3) !important;
+  color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .container-product {
