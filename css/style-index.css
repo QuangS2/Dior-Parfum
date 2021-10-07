@@ -229,11 +229,11 @@
   text-decoration: underline 2px;
 }
 .ind-pro > div:first-child {
-  background-image: url(/images/cover-female.png);
+  background-image: url(../images/cover-female.png);
 }
 .ind-pro > div:last-child {
   flex-direction: row-reverse;
-  background-image: url(/images/cover-male.png);
+  background-image: url(../images/cover-male.png);
 }
 
 .middle {
