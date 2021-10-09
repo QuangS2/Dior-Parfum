@@ -87,7 +87,7 @@ $(function () {
   }, 3210);
   //product
   $(".ind-pro span").click(function () {
-    var prent = $(this).parent().parent()[0].className;
+    var prent = $(this).parent().parent().parent()[0].className;
     var way = this.className;
     var  pos = Number($("."+prent)[0].ariaValueNow);
     if (way === "rightBtn" && pos<3) {

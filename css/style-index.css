@@ -185,15 +185,20 @@
 .ind-pro > div > div:last-child > div:first-child {
   z-index: 3;
   position: absolute;
-  display: flex;
+  height: 70%;
   width: 80%;
+  display: flex;
+}
+.ind-pro > div > div:last-child > div:first-child > div {
+  margin: auto;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  top: 43%;
   font-size: 31px;
 }
-.ind-pro > div > div:last-child > div:first-child > span {
+.ind-pro > div > div:last-child > div:first-child > div > span {
   display: block;
-  padding: 7px 11px;
+  padding: 13px;
   background-color: rgba(128, 128, 128, 0.1);
   border-radius: 5px;
   cursor: pointer;
@@ -213,7 +218,7 @@
   flex-direction: column;
   text-align: center;
   transition: left 1s;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .ind-pro > div > div:last-child > div:last-child > a > div {
   padding: 0 11%;
@@ -369,11 +374,11 @@
     min-height: 453px;
   }
 
-  .ind-pro > div > div:last-child > div:first-child {
-    font-size: 23px;
+  .ind-pro > div > div:last-child > div:first-child > div {
+    font-size: 29px;
   }
-  .ind-pro > div > div:last-child > div:first-child > span {
-    padding: 5px 7px;
+  .ind-pro > div > div:last-child > div:first-child > div > span {
+    padding: 11px;
   }
   .ind-pro > div > div:last-child > div:last-child {
     min-height: 367px;
@@ -437,11 +442,18 @@
   .ind-pro {
     font-size: 11px;
   }
-  .ind-pro > div > div:last-child > div:first-child {
-    font-size: 13px;
-    top: 47%;
+  .ind-pro > div {
+    position: relative;
   }
-  .ind-pro > div > div:last-child > div:first-child > span {
+  .ind-pro > div > div:first-child > a {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+  }
+  .ind-pro > div > div:last-child > div:first-child > div {
+    font-size: 19px;
+  }
+  .ind-pro > div > div:last-child > div:first-child > div > span {
     padding: 7px;
   }
   .ind-pro > div > div:last-child > div:last-child {
@@ -513,8 +525,12 @@
   .ind-pro {
     font-size: 7px;
   }
-  .ind-pro > div > div:last-child > div:first-child {
-    top: 37%;
+  .ind-pro > div > div:last-child > div:first-child > div {
+    font-size: 11px;
+  }
+  .ind-pro > div > div:last-child > div:first-child > div > span {
+    padding: 5px;
+    border-radius: 3px;
   }
   .ind-pro > div > div:last-child > div:last-child {
     min-height: 173px;
