@@ -149,6 +149,9 @@
   width: 100%;
 }
 
+.ind-pro {
+  font-size: 17px;
+}
 .ind-pro > div {
   margin: 7% 0;
   background-size: cover;
@@ -169,7 +172,6 @@
 .ind-pro > div > div:first-child > a {
   margin-top: auto;
   padding: 3% 5%;
-  font-size: 17px;
   color: rgba(0, 0, 0, 0.7);
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -186,12 +188,12 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
-  top: 37%;
-  font-size: 40px;
+  top: 43%;
+  font-size: 31px;
 }
 .ind-pro > div > div:last-child > div:first-child > span {
   display: block;
-  padding: 11px;
+  padding: 7px 11px;
   background-color: rgba(128, 128, 128, 0.1);
   border-radius: 5px;
   cursor: pointer;
@@ -199,31 +201,35 @@
 .ind-pro > div > div:last-child > div:last-child {
   display: flex;
   position: relative;
-  min-height: 487px;
+  min-height: 509px;
   overflow: hidden;
 }
 .ind-pro > div > div:last-child > div:last-child > a {
   width: 100%;
+  height: 100%;
   position: absolute;
   left: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   transition: left 1s;
+  justify-content: flex-end;
 }
 .ind-pro > div > div:last-child > div:last-child > a > div {
-  padding: 5% 11%;
+  padding: 0 11%;
 }
 .ind-pro > div > div:last-child > div:last-child > a > div > img {
-  width: 100%;
+  width: 89%;
   border-radius: 13px;
 }
 .ind-pro > div > div:last-child > div:last-child > a > h2 {
   color: lightslategray;
+  font-size: 21px;
+  margin-top: 19px;
 }
 .ind-pro > div > div:last-child > div:last-child > a > p {
-  padding: 2px 13px;
   width: fit-content;
-  margin: 13px auto;
+  margin: 19px auto 0;
   color: gray;
 }
 .ind-pro > div > div:last-child > div:last-child > a > p:hover {
@@ -331,6 +337,13 @@
   .review-content > div > div:first-child {
     min-height: 600px;
   }
+
+  .ind-pro > div > div:last-child > div:last-child {
+    min-height: 433px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > h2 {
+    font-size: 19px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container-brand > div > a {
@@ -354,6 +367,19 @@
 
   .review-content > div > div:first-child {
     min-height: 453px;
+  }
+
+  .ind-pro > div > div:last-child > div:first-child {
+    font-size: 23px;
+  }
+  .ind-pro > div > div:last-child > div:first-child > span {
+    padding: 5px 7px;
+  }
+  .ind-pro > div > div:last-child > div:last-child {
+    min-height: 337px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > p {
+    margin-top: 11px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -406,6 +432,23 @@
 
   .container-brand > div > a {
     width: 43px;
+  }
+
+  .ind-pro {
+    font-size: 11px;
+  }
+  .ind-pro > div > div:last-child > div:first-child {
+    font-size: 13px;
+    top: 47%;
+  }
+  .ind-pro > div > div:last-child > div:first-child > span {
+    padding: 7px;
+  }
+  .ind-pro > div > div:last-child > div:last-child {
+    min-height: 263px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > h2 {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -465,6 +508,26 @@
 
   .container-brand > div {
     margin: 0;
+  }
+
+  .ind-pro {
+    font-size: 7px;
+  }
+  .ind-pro > div > div:last-child > div:first-child {
+    top: 37%;
+  }
+  .ind-pro > div > div:last-child > div:last-child {
+    min-height: 127px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > div > img {
+    border-radius: 5px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > h2 {
+    margin-top: 11px;
+    font-size: 7px;
+  }
+  .ind-pro > div > div:last-child > div:last-child > a > p {
+    margin-top: 5px;
   }
 }
 
