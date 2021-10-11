@@ -219,3 +219,28 @@
 }
 
 /*# sourceMappingURL=shop.css.map */
+#cartb{
+  display: flex;
+  position: relative;
+}
+.fa-cart-plus{
+  position: relative;
+}
+#num-cart{
+  position: absolute;
+  color: rgb(36, 36,36);
+  background-color: #E76060;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  padding: 0px 6px;
+  right: 2px;
+  top: -8px;
+  font-size: 16px;
+  font-weight: 500;
+}
